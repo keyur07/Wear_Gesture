@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewIn"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:src="#1bffffff"
+        android:visibility="invisible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_boxedEdges="all"
+        app:layout_box="left|right">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/diag_button_bottom_padding_round"
+            android:paddingTop="@dimen/diag_content_top_padding_round"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textViewIns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:text="@string/settings_open_instruction"
+                app:layout_box="all" />
+
+
+            <Button
+                android:id="@+id/buttonadd"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:drawableLeft="@drawable/ic_add_white_24dp"
+                android:drawableTint="@color/blue"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/main_add_a_gesture"
+                android:textAlignment="center"
+                android:textColor="@color/blue" />
+
+            <Button
+                android:id="@+id/buttonall"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/main_all_gestures"
+                android:drawableTint="@color/blue"
+                android:drawableLeft="@drawable/ic_list_white_24dp"
+                android:textAlignment="center"
+                android:textColor="@color/blue" />
+
+
+            <Button
+                android:id="@+id/buttonMore"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:drawableLeft="@drawable/ic_settings_white_24dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/main_settings"
+                android:visibility="gone"
+                android:drawableTint="@color/blue"
+                android:textAlignment="center"
+                android:textColor="@color/blue" />
+
+            <Button
+                android:id="@+id/buttonhelp"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:drawableLeft="@drawable/ic_help_white_24dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/menu_help"
+                android:visibility="gone"
+                android:drawableTint="@color/blue"
+                android:textAlignment="center"
+                android:textColor="@color/blue" />
+
+            <Button
+                android:id="@+id/buttonTest"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Developer test"
+                android:textAlignment="center"
+                android:drawableTint="@color/blue"
+                android:textColor="@color/secondary_text_light"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/oreoWarn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#2affffff"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/titleOreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="@string/main_overlay_notif_title"
+                    android:textStyle="bold"
+                    app:layout_box="all" />
+
+                <TextView
+                    android:id="@+id/textViewOreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="@string/main_oreo_content"
+                    app:layout_box="all"
+                    tools:text="@string/main_oreo_content" />
+
+                <Button
+                    android:id="@+id/buttonOreo"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@android:string/ok"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_blue_bright"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.wear.widget.BoxInsetLayout>

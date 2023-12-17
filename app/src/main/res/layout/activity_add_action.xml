@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddAction">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_boxedEdges="all"
+        app:layout_box="left|right">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/diag_button_bottom_padding_round"
+            android:paddingTop="@dimen/diag_content_top_padding_round"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textViewIns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/choose_an_action"
+                app:layout_box="all"
+                android:paddingLeft="5dp"/>
+
+
+            <Button
+                android:id="@+id/buttonApp"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:drawableLeft="@drawable/ic_watch_white_24dp"
+                android:drawableTint="@color/blue"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/action_launch_app"
+                android:textAlignment="center"
+                android:textColor="@color/blue" />
+
+            <Button
+                android:id="@+id/buttonTimer"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:fontFamily="sans-serif-condensed"
+                android:drawableTint="@color/blue"
+                android:text="@string/action_timer_actions"
+                android:drawableLeft="@drawable/ic_timer_white_24dp"
+                android:textAlignment="center"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:id="@+id/textViewIns2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingBottom="10dp"
+                android:paddingTop="20dp"
+                android:text="Use mobile app to add actions listed below"
+                android:visibility="gone"
+                app:layout_box="all" />
+
+            <Button
+                android:id="@+id/buttonMobile"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:drawableLeft="@drawable/ic_smartphone_white_24dp"
+                android:enabled="false"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Mobile app"
+                android:textAlignment="center"
+                android:textColor="@color/light_grey"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/buttonPhone"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:drawableLeft="@drawable/ic_phone_white_24dp"
+
+                android:fontFamily="sans-serif-condensed"
+                android:text="Phone call"
+                android:textAlignment="center"
+                android:textColor="@color/light_grey"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/buttonTasker"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:drawableLeft="@drawable/ic_flash_on_white_24dp"
+
+                android:fontFamily="sans-serif-condensed"
+                android:text="Tasker"
+                android:textAlignment="center"
+                android:textColor="@color/light_grey"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textViewIns3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:text="@string/action_mobile_notice"
+                app:layout_box="all" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.wear.widget.BoxInsetLayout>

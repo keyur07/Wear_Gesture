@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/container"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddGesture">
+
+    <TextView
+        android:id="@+id/textDraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:text="@string/draw_your_pattern"
+        android:textColor="@color/white"
+        app:layout_boxedEdges="all"
+        app:layout_box="all" />
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestureDraw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeDuration="200"
+        app:layout_boxedEdges="all"
+        android:fadeEnabled="true">
+
+    </android.gesture.GestureOverlayView>
+
+    <Button
+        android:id="@+id/buttonBack"
+        style="@android:style/MediaButton.Pause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:background="#91737373"
+        android:text="@string/back"
+        android:textColor="@color/white" />
+
+</androidx.wear.widget.BoxInsetLayout>

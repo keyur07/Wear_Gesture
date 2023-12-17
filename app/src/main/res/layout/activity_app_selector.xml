@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AppSelector">
+
+    <ListView
+        android:id="@+id/listviewApp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/diag_button_bottom_padding_round"
+        android:paddingBottom="@dimen/diag_button_bottom_padding_round"
+        app:layout_boxedEdges="all"
+        android:clipToPadding="false">
+    </ListView>
+
+</androidx.wear.widget.BoxInsetLayout>
